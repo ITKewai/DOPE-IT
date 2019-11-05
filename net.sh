@@ -1,3 +1,2 @@
-#!/bin/bash
-sudo apt install wget
-bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)
+sudo apt-get wget
+sudo wget "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/net.sh" && ./net.sh
