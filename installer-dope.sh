@@ -43,7 +43,7 @@ do
             cd
             mkdir -p DOPE
             cd DOPE
-            wget -N "https://raw.githubusercontent.com/Gagong/Toshinou-Revamped/master/AutoUpdater.py" && python AutoUpdater.py
+            wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AutoUpdater.py" && python AutoUpdater.py
             chmod +x ./DOPE/DOPE.cli
             clear
             echo "Downloaded/Updated succesfully"
