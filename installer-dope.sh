@@ -26,3 +26,7 @@ case $version in
 esac
 
 sudo apt install curl libssl1.0.0 libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 $version
+cd
+mkdir DOPE
+cd DOPE
+wget -N "https://powerofdark.space/downloads/DOPE/0.42/DOPE.cli"
