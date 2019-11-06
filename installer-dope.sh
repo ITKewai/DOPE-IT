@@ -29,7 +29,7 @@ do
             	exit 1
             	;;
             esac
-            sudo apt install curl libssl1.0.0 libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 python-requests python python3-pip python-pip $version
+            sudo apt install curl libssl1.0.0 libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4 python-requests python python3-pip python-pip $version
             sudo pip install wget
             clear
             echo "Depandancies installed succesfully"
