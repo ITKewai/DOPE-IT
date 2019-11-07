@@ -49,6 +49,8 @@ do
                                 cd DOPE
                                 wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AutoUpdater.py" && python AutoUpdater.py
                                 chmod +x ./DOPE/DOPE.cli
+                                wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                chmod +x ./DOPE/up.sh
                                 clear
                                 echo "Downloaded/Updated succesfully"
                                 sleep 3
