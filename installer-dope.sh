@@ -48,9 +48,9 @@ do
                                 mkdir -p DOPE
                                 cd DOPE
                                 wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AutoUpdater.py" && python AutoUpdater.py
-                                chmod +x ./DOPE/DOPE.cli
+                                chmod +x ./DOPE.cli
                                 wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
-                                chmod +x ./DOPE/up.sh
+                                chmod +x ./up.sh
                                 clear
                                 echo "Downloaded/Updated succesfully"
                                 sleep 3
@@ -80,4 +80,4 @@ do
             ;;
         *) echo "invalid option $REPLY";;
     esac
-done
+don
