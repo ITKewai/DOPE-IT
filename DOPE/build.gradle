@@ -1,0 +1,29 @@
+apply plugin: 'java'
+apply plugin: 'application'
+mainClassName = 'Main'
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'Main'
+        )
+    }
+}
+
+group 'dope'
+version '1.0-SNAPSHOT'
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'net.dv8tion:JDA:4.0.0_50'
+    compile group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.10'
+    compile group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1'
+    compile 'com.google.code.gson:gson:2.7'
+}
