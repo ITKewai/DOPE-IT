@@ -21,7 +21,7 @@ public class Api extends ListenerAdapter {
         try {
             JDA jda = null;
             try {
-                jda = new JDABuilder("NjA5Mzk3Mjg2NzU3NDY2MTMz.XcxK2w.Amq_sCCO4IxXpd2eBhp03sV3q2c")
+                jda = new JDABuilder("NjA5Mzk3Mjg2NzU3NDY2MTMz.XcxNQw.vXs99BR9VtLUiMioxPsqVf2DfVs")
                         //NjA5Mzk3Mjg2NzU3NDY2MTMz.XU2Kcg.9UDBsXUkVZn8UXlN3IDYopZmjDQ
                         //NjM3NzE4NDcyNDAyNjY1NDcy.XbSPuQ.vdYhU_bZDlpyjnZ6_gHQ4-PP2V4
                         .addEventListeners(new Api())
