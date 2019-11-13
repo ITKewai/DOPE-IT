@@ -208,7 +208,8 @@ public class CommandHandler {
     }
 
     private void pingDevs(String command, User author, Message message, MessageChannel channel, JDA jda, MessageReceivedEvent event) {
-        if (message.getMentionedUsers().toString().contains(Users.getPowerOfDark()) ||
+        //TO DO Fix this potato method
+        /*if (message.getMentionedUsers().toString().contains(Users.getPowerOfDark()) ||
                 message.getMentionedUsers().toString().contains(Users.getFrontendDev())) {
             String ID[] = {
                     "271686004035813387",
@@ -239,6 +240,6 @@ public class CommandHandler {
                     break;
                 }
             }
-        }
+        }*/
     }
 }
