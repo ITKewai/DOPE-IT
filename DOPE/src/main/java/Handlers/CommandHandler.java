@@ -19,7 +19,6 @@ import java.util.Random;
 
 public class CommandHandler {
 
-    private String commandList[] = {"!help", "!version", "", "", "!", "!"};
     private Api _api = new Api();
     private String prefix = "!";
     private CreateTag Tag = new CreateTag();
@@ -61,7 +60,6 @@ public class CommandHandler {
             channel.sendMessage("Your roll: " + roll).queue();
         }
         else if (command.equalsIgnoreCase("!squad")) {
-
             String TAG[] = {
                     Tag.asMember(Users.getCrankTV()),
                     Tag.asMember(Users.getKewai()),
@@ -80,15 +78,20 @@ public class CommandHandler {
                     Users.getEra(),
                     Users.getGagong()
             };
+            boolean perm = false;
             for (String ids: ID) {
                 if (message.getAuthor().getId().toString().contains(ids))
                 {
-                    String squad = "";
-                    for (String id: TAG) {
-                        squad = squad + id + " ";
-                    }
-                    channel.sendMessage("WHERE MY SQUAD? " + squad).queue();
+                    perm = true;
+                    break;
                 }
+            }
+            if (perm) {
+                String squad = "";
+                for (String id: TAG) {
+                    squad = squad + id + " ";
+                }
+                channel.sendMessage("WHERE MY SQUAD? " + squad).queue();
             }
 
         }
@@ -209,7 +212,7 @@ public class CommandHandler {
 
     private void pingDevs(String command, User author, Message message, MessageChannel channel, JDA jda, MessageReceivedEvent event) {
         //TO DO Fix this potato method
-        /*if (message.getMentionedUsers().toString().contains(Users.getPowerOfDark()) ||
+        if (message.getMentionedUsers().toString().contains(Users.getPowerOfDark()) ||
                 message.getMentionedUsers().toString().contains(Users.getFrontendDev())) {
             String ID[] = {
                     "271686004035813387",
@@ -233,13 +236,17 @@ public class CommandHandler {
                     "380786597458870282",
                     "323058900771536898"
             };
+            boolean isStaff = false;
             for (String id: ID) {
                 if (!message.getAuthor().getId().toString().contains(id)) {
-                    channel.sendMessage(Tag.asMember(message.getAuthor().getId().toString()) + ", don't tag Developers, please!").queue();
-                    event.getGuild().addRoleToMember(message.getMember(), event.getGuild().getRoleById("642797434648657921"));
+                    isStaff = true;
                     break;
                 }
             }
-        }*/
+            if (isStaff) {
+                channel.sendMessage(Tag.asMember(message.getAuthor().getId().toString()) + "**, don't tag Developers, please!**").queue();
+                event.getGuild().addRoleToMember(message.getMember(), event.getGuild().getRoleById(Roles.getWarned()));
+            }
+        }
     }
 }

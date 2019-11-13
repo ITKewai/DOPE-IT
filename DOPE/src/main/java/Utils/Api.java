@@ -3,6 +3,7 @@ package Utils;
 import Debug.Debug;
 import Handlers.CommandHandler;
 import Json.GetDataClassFromJson;
+import net.dv8tion.jda.api.AccountType;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.*;
@@ -20,7 +21,7 @@ public class Api extends ListenerAdapter {
         try {
             JDA jda = null;
             try {
-                jda = new JDABuilder("NjA5Mzk3Mjg2NzU3NDY2MTMz.XU2Kcg.9UDBsXUkVZn8UXlN3IDYopZmjDQ")
+                jda = new JDABuilder("NjM3NzE4NDcyNDAyNjY1NDcy.Xcw8xw.N_Z7Im2d1Ln4AenaYlPbybd8_gY")
                         //NjA5Mzk3Mjg2NzU3NDY2MTMz.XU2Kcg.9UDBsXUkVZn8UXlN3IDYopZmjDQ
                         //NjM3NzE4NDcyNDAyNjY1NDcy.XbSPuQ.vdYhU_bZDlpyjnZ6_gHQ4-PP2V4
                         .addEventListeners(new Api())
