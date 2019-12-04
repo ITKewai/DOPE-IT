@@ -28,10 +28,10 @@ do
                                 cd
                                 mkdir -p DOPE
                                 cd DOPE
-                                wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT-PRIVATE/master/AutoUpdater.py" && python3 AutoUpdater.py
+                                wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AutoUpdater.py" && python3 AutoUpdater.py
                                 chmod +x ./DOPE.cli
-                                wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT-PRIVATE/master/up2.sh"
-                                chmod +x ./up2.sh
+                                wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                chmod +x ./up.sh
                                 clear
                                 echo "Downloaded/Updated succesfully"
                                 sleep 3
