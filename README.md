@@ -1,13 +1,13 @@
 # DOPE-IT
-Supported Linux distributions
-Ubuntu from 14.x to 18.x
+Supported Linux* & CentOS distributions
+*Ubuntu from 14.x to 18.x
 
 Features
 Auto download all needed libraries & packages
 Install latest .cli version inside /DOPE folder
 Update to latest .cli version version inside /DOPE folder
-Run DOPE with "screen"
-Uninstall the bot
+Run DOPE with "screen" / "tmux"
+
 
 The following tasks will be done:
 Checks if the linux distribution is supported
