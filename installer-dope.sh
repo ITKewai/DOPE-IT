@@ -8,7 +8,7 @@ do
         "Install Dependencies")
             echo "you chose choice $REPLY which is $opt"
             sleep 5
-            sudo sudo yum install epel-release -y
+            sudo yum install epel-release -y
             sudo yum update -y
             sudo yum upgrade -y
             sudo yum install -y lttng-ust libcurl openssl-libs krb5-libs libicu zlib libunwind libuuid python3-pip compat-openssl10 tmux
