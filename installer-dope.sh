@@ -32,7 +32,6 @@ do
                                 chmod +x ./DOPE.cli
                                 wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
                                 chmod +x ./up.sh
-                                clear
                                 echo "Downloaded/Updated succesfully"
                                 sleep 3
                                 echo "1) Install Dependencies 3) Run DOPE"
