@@ -12,7 +12,7 @@ do
             sudo yum update -y
             sudo yum upgrade -y
             sudo yum install lttng-ust libcurl openssl-libs krb5-libs libicu zlib libunwind libuuid python3-pip compat-openssl10 tmux
-            sudo pip3 install wget
+            sudo pip3 install wget requests
             echo "Dependencies installed succesfully"
             sleep 1
             echo "1) Install Dependencies 3) Run DOPE"
