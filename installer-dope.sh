@@ -94,7 +94,7 @@ do
                 ;;
             esac
             sudo apt install curl libssl1.0.0 libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4 python-requests python python3-pip python-pip screen $version
-            sudo pip install wget
+            sudo pip install wget requests
             clear
             echo "Dependencies installed succesfully"
             sleep 1
