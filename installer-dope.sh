@@ -95,7 +95,6 @@ do
             esac
             sudo apt install curl libssl1.0.0 libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4 python-requests python python3-pip python-pip screen $version
             sudo pip install wget requests
-            clear
             echo "Dependencies installed succesfully"
             sleep 1
             echo "1) Install Dependencies 3) Run DOPE"
@@ -115,7 +114,6 @@ do
                                 chmod +x ./DOPE.cli
                                 wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
                                 chmod +x ./up.sh
-                                clear
                                 echo "Downloaded/Updated succesfully"
                                 sleep 3
                                 echo "1) Install Dependencies 3) Run DOPE"
