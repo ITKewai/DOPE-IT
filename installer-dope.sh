@@ -80,10 +80,10 @@ do
                 version="libicu52"
                 ;;
                 16.*)
-                version="licubu55"
+                version="libicu55"
                 ;;
                 17.*)
-                version="licubu57"
+                version="libicu57"
                 ;;
                 18.*)
                 version="libicu60"
