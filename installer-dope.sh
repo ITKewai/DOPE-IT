@@ -131,11 +131,12 @@ do
             echo "you chose choice $REPLY which is $opt"
             sleep 3
             cd
-            sudo chmod +x ./DOPE/DOPE.cli
+cd DOPE
+            sudo chmod +x ./DOPE.cli
             echo "after entering bot key, you can close this window"
             echo "bot will keep running"
             sleep 5
-            screen -S DOPE ./DOPE/DOPE.cli
+            screen -S DOPE ./DOPE.cli
             ;;
         "Quit")
             break
