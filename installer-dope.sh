@@ -136,6 +136,8 @@ cd DOPE
             echo "after entering bot key, you can close this window"
             echo "bot will keep running"
             sleep 5
+            screen -ls  | egrep "^\s*[0-9]+.DOPE" | awk -F "." '{print $1}' | xargs kill
+            clear
             screen -S DOPE ./DOPE.cli
             ;;
         "Quit")
