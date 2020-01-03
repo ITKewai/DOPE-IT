@@ -4,16 +4,19 @@ Linux **Ubuntu** & **CentOS** installer & updater by @IT | Kewai#9029 ( @Gagong#
 **Ubuntu [x64/armhf]:**
 ```
 sudo apt install wget
-bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)```
+bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)
+```
 
 **CentOS 8+**
 ```
 sudo yum install wget
-bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)```
+bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)
+```
 
 **Update:**
 ```
-./DOPE/up.sh```
+./DOPE/up.sh
+```
 
 **Features: **
 Auto download all needed libraries & packages
