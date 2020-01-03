@@ -1,29 +1,28 @@
-# DOPE-IT
-Supported Linux* & CentOS distributions
-*Ubuntu from 14.x to 18.x
+@everyone 
+Linux **Ubuntu** & **CentOS** installer & updater by @IT | Kewai#9029 ( @Gagong#3333  made a small contribution to this :kappa:)
 
-Features
+**Ubuntu [x64/armhf]:**
+```sudo apt install wget
+bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)```
+**CentOS 8+**
+```sudo yum install wget
+bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)```
+**Update:**
+```./DOPE/up.sh```
+**Features: **
 Auto download all needed libraries & packages
-Install latest .cli version inside /DOPE folder
-Update to latest .cli version version inside /DOPE folder
-Run DOPE with "screen" / "tmux"
+Install latest .cli version
+Update to latest .cli version
+Run DOPE with screen
 
-
-The following tasks will be done:
-Checks if the linux distribution is supported
-Installs all the necessary dependencies
-Installs the latest DOPE version
-Sets all the file permissions correctly
-Generates startup files:
-./DOPE/up.sh
-The duration of the installation process depends on your system (how many packages need to be updated, internet connection, processing power) but typically takes about one to five minutes.
-
-Watch video
+**Video guide:**
 https://youtu.be/UlEZr0YAoAU
-Installation
-```ruby
-sudo apt install wget
-bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/installer-dope.sh)
-```
 
-This command basically executes the latest version of the installer-script via the bash.
+**Installation without script video guide:**
+https://youtu.be/BWBzQpY7tfU
+
+**Changelog:**
+```fix
+0.1 Changed KEY directory
+0.2 Added some features
+```
