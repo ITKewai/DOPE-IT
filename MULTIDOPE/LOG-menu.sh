@@ -95,7 +95,8 @@ do
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
-                        sleep 1echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
+                        sleep 1
+			echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
 						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
                         esac
                         ;;  
@@ -159,7 +160,8 @@ do
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
-                        sleep 1echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
+                        sleep 1
+			echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
 						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
                         esac
                         ;;  
