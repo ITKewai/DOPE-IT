@@ -590,8 +590,9 @@ do
                                                 fi
                                             for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                             echo -e "\e[32m\e[1m"
-                                            echo "1) DOPE1      3) DOPE3     5) DOPE5     7) DOPE7     9) DOPE9    11) DOPEX"
-                                            echo "2) DOPE2      4) DOPE4     6) DOPE6     8) DOPE8    10) DOPE10   12) Back"
+											echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
+											echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
+											echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
                                                 ;;
                                         *)
                                         echo "Something went wrong, write IT |Kewai"
@@ -604,8 +605,9 @@ do
                                 *)
                                     echo "Your chose No, what you want to do? "  
                                     sleep 1
-                                    echo "1) DOPE1      3) DOPE3     5) DOPE5     7) DOPE7     9) DOPE9    11) DOPEX"
-                                    echo "2) DOPE2      4) DOPE4     6) DOPE6     8) DOPE8    10) DOPE10   12) Back"
+									echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
+									echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
+									echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
                                 esac
             ;;
         "Back")
