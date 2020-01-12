@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\e[32m\e[1m######"
 PS3='Which DOPE you want to start/reboot?: '
-options=("DOPE1" "DOPE2" "DOPE3" "DOPE4" "DOPE5" "DOPE6" "DOPE7" "DOPE8" "DOPE9" "DOPE10" "DOPEX" "Back")
+options=("DOPE1" "DOPE2" "DOPE3" "DOPE4" "DOPE5" "DOPE6" "DOPE7" "DOPE8" "DOPE9" "DOPE10" "DOPE0" "DOPEX" "Back")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -343,7 +343,7 @@ do
 						                architecture="$(dpkg --print-architecture)"
 						                            case $architecture in
 						                                amd64)
-						                            screen -ls  | egrep "^\s*[0-9]+.DOPE1" | awk -F "." '{print $1}' | xargs kill
+						                            screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
 						                            clear
 						                            cd
 						                            cd DOPE
@@ -354,7 +354,7 @@ do
 													echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
 						                                    ;;  
 						                                armhf)
-						                            screen -ls  | egrep "^\s*[0-9]+.DOPE1" | awk -F "." '{print $1}' | xargs kill
+						                            screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
 						                            clear
 						                            cd
 						                            cd DOPE
