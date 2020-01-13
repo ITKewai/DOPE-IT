@@ -18,7 +18,7 @@ if [ -f /etc/centos-release ]; then
                 echo "1) Install Dependencies 3) Run DOPE"
                 echo "2) Download/Update DOPE 4) Quit"
                 ;;
-            "Download/Update DOPE0")
+            "Download/Update DOPE")
                 read -r -p "This action will kill any 'tmux' process, continue?? [y/N] " response
                 case "$response" in
                     [yY][eE][sS]|[yY]) 
