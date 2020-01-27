@@ -1,0 +1,20 @@
+// ==UserScript==
+// @name     DOPE DOSID LOGIN - IT | KEWAI
+// @version  0.40
+// @grant    none
+// @match         https://*.darkorbit.com/*
+// @run-at     document-start
+// ==/UserScript==
+
+function attemtSidLogin() {
+    var dosid = /[?&]dosid=([^&]+)/.exec(window.location.href);
+    if (dosid == null) dosid = /[?&]sid=([^&]+)/.exec(window.location.href);
+    if (dosid == null) return; // None sid on the url, return.
+
+    var server = /^http[s]?:[/][/]([^.]+)[.]darkorbit[.]com/.exec(window.location.href);
+    if (server == null) return;
+
+    document.cookie = "dosid=" + dosid[1] + ";path=/";
+    window.location.href = "https://" + server[1] + ".darkorbit.com/indexInternal.es?action=internalStart";
+}
+attemtSidLogin();
