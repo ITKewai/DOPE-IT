@@ -1,65 +1,65 @@
 #!/bin/bash
 echo -e "\e[1m\e[33mDOPE LOG MENU"
 PS3='Which DOPE you want to start LOG?: '
-options=("DOPE1" "DOPE2" "DOPE3" "DOPE4" "DOPE5" "DOPE6" "DOPE7" "DOPE8" "DOPE9" "DOPE10" "DOPE0" "Back")
+options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "Back")
 select opt in "${options[@]}"
 do
     case $opt in
-"DOPE1")
+"DOPE01")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/1'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE1, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE01, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE1 log will start soon, you will find file here:"
+                        echo "DOPE01 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/1/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE1" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE01" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/1
                         sudo rm screenlog.*
-                        screen -L -S DOPE1 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG1 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE01 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG01 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/1'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE1, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE01, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE1 log will start soon, you will find file here:"
+                        echo "DOPE01 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/1/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE1" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE01" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/1
                         sudo rm screenlog.*
-                        screen -L -S DOPE1 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG1 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE01 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG01 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -70,61 +70,61 @@ do
                     ;;
             esac
             ;;
-"DOPE2")
+"DOPE02")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/2'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE2, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE02, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE2 log will start soon, you will find file here:"
+                        echo "DOPE02 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/2/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE2" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE02" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/2
                         sudo rm screenlog.*
-                        screen -L -S DOPE2 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG2 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE02 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG02 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-			echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/2'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE2, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE02, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE2 log will start soon, you will find file here:"
+                        echo "DOPE02 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/2/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE2" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE02" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/2
                         sudo rm screenlog.*
-                        screen -L -S DOPE2 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG2 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE02 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG02 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -135,61 +135,61 @@ do
                     ;;
             esac
             ;;
-"DOPE3")
+"DOPE03")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/3'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE3, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE03, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE3 log will start soon, you will find file here:"
+                        echo "DOPE03 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/3/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE3" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE03" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/3
                         sudo rm screenlog.*
-                        screen -L -S DOPE3 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG3 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE03 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG03 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-			echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/3'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE3, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE03, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE3 log will start soon, you will find file here:"
+                        echo "DOPE03 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/3/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE3" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE03" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/3
                         sudo rm screenlog.*
-                        screen -L -S DOPE3 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG3 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE03 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG03 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -200,61 +200,61 @@ do
                     ;;
             esac
             ;;
-"DOPE4")
+"DOPE04")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/4'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE4, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE04, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE4 log will start soon, you will find file here:"
+                        echo "DOPE04 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/4/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE4" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE04" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/4
                         sudo rm screenlog.*
-                        screen -L -S DOPE4 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG4 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE04 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG04 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/4'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE4, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE04, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE4 log will start soon, you will find file here:"
+                        echo "DOPE04 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/4/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE4" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE04" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/4
                         sudo rm screenlog.*
-                        screen -L -S DOPE4 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG4 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE04 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG04 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -265,61 +265,61 @@ do
                     ;;
             esac
             ;;
-"DOPE5")
+"DOPE05")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/5'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE5, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE05, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE5 log will start soon, you will find file here:"
+                        echo "DOPE05 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/5/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE5" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE05" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/5
                         sudo rm screenlog.*
-                        screen -L -S DOPE5 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG5 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE05 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG05 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/5'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE5, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE05, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE5 log will start soon, you will find file here:"
+                        echo "DOPE05 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/5/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE5" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE05" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/5
                         sudo rm screenlog.*
-                        screen -L -S DOPE5 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG5 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE05 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG05 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -330,61 +330,61 @@ do
                     ;;
             esac
             ;;
-"DOPE6")
+"DOPE06")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/6'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE6, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE06, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE6 log will start soon, you will find file here:"
+                        echo "DOPE06 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/6/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE6" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE06" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/6
                         sudo rm screenlog.*
-                        screen -L -S DOPE6 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG6 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE06 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG06 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/6'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE6, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE06, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE6 log will start soon, you will find file here:"
+                        echo "DOPE06 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/6/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE6" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE06" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/6
                         sudo rm screenlog.*
-                        screen -L -S DOPE6 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG6 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE06 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG06 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -395,61 +395,61 @@ do
                     ;;
             esac
             ;;
-"DOPE7")
+"DOPE07")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/7'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE7, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE07, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE7 log will start soon, you will find file here:"
+                        echo "DOPE07 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/7/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE7" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE07" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/7
                         sudo rm screenlog.*
-                        screen -L -S DOPE7 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG7 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE07 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG07 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/7'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE7, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE07, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE7 log will start soon, you will find file here:"
+                        echo "DOPE07 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/7/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE7" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE07" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/7
                         sudo rm screenlog.*
-                        screen -L -S DOPE7 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG7 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE07 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG07 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -460,61 +460,61 @@ do
                     ;;
             esac
             ;;
-"DOPE8")
+"DOPE08")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/8'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE8, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE08, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE8 log will start soon, you will find file here:"
+                        echo "DOPE08 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/8/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE8" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE08" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/8
                         sudo rm screenlog.*
-                        screen -L -S DOPE8 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG8 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE08 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG08 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/8'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE8, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE08, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE8 log will start soon, you will find file here:"
+                        echo "DOPE08 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/8/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE8" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE08" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/8
                         sudo rm screenlog.*
-                        screen -L -S DOPE8 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG8 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE08 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG08 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -525,61 +525,61 @@ do
                     ;;
             esac
             ;;
-"DOPE9")
+"DOPE09")
     architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
                         echo "this function will work in '/DOPEMULTI/9'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE9, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE09, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE9 log will start soon, you will find file here:"
+                        echo "DOPE09 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/9/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE9" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE09" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/9
                         sudo rm screenlog.*
-                        screen -L -S DOPE9 ./DOPE.cli
-                        echo -e "\e[1m\e[33mLOG9 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE09 ./DOPE.cli
+                        echo -e "\e[1m\e[33mLOG09 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
                         echo "this function will work in '/DOPEMULTI/9'folder"
                         echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                        read -r -p "This action will start/reboot DOPE9, continue? [y/N] " response
+                        read -r -p "This action will start/reboot DOPE09, continue? [y/N] " response
                         case "$response" in
                         [yY][eE][sS]|[yY]) 
-                        echo "DOPE9 log will start soon, you will find file here:"
+                        echo "DOPE09 log will start soon, you will find file here:"
                         echo -e "\e[32m /DOPEMULTI/9/screenlog.0 \e[0m"
                         sleep 5
-                        screen -ls  | egrep "^\s*[0-9]+.DOPE9" | awk -F "." '{print $1}' | xargs kill
+                        screen -ls  | egrep "^\s*[0-9]+.DOPE09" | awk -F "." '{print $1}' | xargs kill
                         clear
                         cd
                         cd DOPEMULTI/9
                         sudo rm screenlog.*
-                        screen -L -S DOPE9 ./DOPE.Cli
-                        echo -e "\e[1m\e[33mLOG9 IS STARTED SUCESSFULL"
+                        screen -L -S DOPE09 ./DOPE.Cli
+                        echo -e "\e[1m\e[33mLOG09 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -610,14 +610,14 @@ do
                         screen -L -S DOPE10 ./DOPE.cli
                         echo -e "\e[1m\e[33mLOG10 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                         ;;  
                     armhf)
@@ -637,14 +637,14 @@ do
                         screen -L -S DOPE10 ./DOPE.Cli
                         echo -e "\e[1m\e[33mLOG10 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-						echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+						echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                         esac
                             ;;
                     *)
@@ -655,61 +655,61 @@ do
                     ;;
             esac
             ;;
-"DOPE0")
+"DOPE00")
     architecture="$(dpkg --print-architecture)"
             case $architecture in
                 amd64)
                     echo "this function will work in '/DOPE'folder"
                     echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                    read -r -p "This action will start/reboot DOPE0, continue? [y/N] " response
+                    read -r -p "This action will start/reboot DOPE00, continue? [y/N] " response
                     case "$response" in
                     [yY][eE][sS]|[yY]) 
-                    echo "DOPE0 log will start soon, you will find file here:"
+                    echo "DOPE00 log will start soon, you will find file here:"
                     echo -e "\e[32m /DOPE/screenlog.0 \e[0m"
                     sleep 5
-                    screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+                    screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
                     clear
                     cd
                     cd DOPE
                     sudo rm screenlog.*
-                    screen -L -S DOPE0 ./DOPE.cli
-                    echo -e "\e[1m\e[33mLOG0 IS STARTED SUCESSFULL"
+                    screen -L -S DOPE00 ./DOPE.cli
+                    echo -e "\e[1m\e[33mLOG00 IS STARTED SUCESSFULL"
                     sleep 1
-					echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-					echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+					echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+					echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                     ;;
                     *)
                     echo "Your chose No, what you want to do? "  
                     sleep 1
-					echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-					echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+					echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+					echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                     esac
                     ;;  
                 armhf)
                     echo "this function will work in '/DOPE'folder"
                     echo -e "\e[41m use this function only if requested by SUPPORT MEMBER \e[0m\e[1m\e[33m"
-                    read -r -p "This action will start/reboot DOPE0, continue? [y/N] " response
+                    read -r -p "This action will start/reboot DOPE00, continue? [y/N] " response
                     case "$response" in
                     [yY][eE][sS]|[yY])
-                    echo "DOPE0 log will start soon, you will find file here:"
+                    echo "DOPE00 log will start soon, you will find file here:"
                     echo -e "\e[32m /DOPE/screenlog.0 \e[0m"
                     sleep 5
-                    screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+                    screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
                     clear
                     cd
                     cd DOPE
                     sudo rm screenlog.*
-                    screen -L -S DOPE0 ./DOPE.Cli
-                    echo -e "\e[1m\e[33mLOG0 IS STARTED SUCESSFULL"
+                    screen -L -S DOPE00 ./DOPE.Cli
+                    echo -e "\e[1m\e[33mLOG00 IS STARTED SUCESSFULL"
                     sleep 1
-					echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-					echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+					echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+					echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                     ;;
                     *)
                     echo "Your chose No, what you want to do? "  
                     sleep 1
-					echo "1) DOPE1     3) DOPE3    5) DOPE5    7) DOPE7    9) DOPE9   11) DOPE0"
-					echo "2) DOPE2     4) DOPE4    6) DOPE6    8) DOPE8   10) DOPE10  12) Back"
+					echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
+					echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
                     esac
                         ;;
                 *)

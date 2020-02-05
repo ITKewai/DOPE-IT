@@ -70,7 +70,7 @@ else
     echo -e "\e[92m\e[1mSCRIPT WRITED BY \e[5mIT | Kewai \e[5m\e[0m"
     echo -e "\e[96m\e[1mREMEMBER TO INSTALL DEPENDECIES BEFORE DOWNLOAD DOPE"
     PS3='Please enter your choice: '
-    options=("Install Dependencies" "Download/Update DOPE" "Run DOPE0" "DOPE EXPERIMENTAL" "Quit")
+    options=("Install Dependencies" "Download/Update DOPE" "Run DOPE00" "DOPE EXPERIMENTAL" "Quit")
     select opt in "${options[@]}"
     do
         case $opt in
@@ -132,19 +132,19 @@ else
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                 ;;
             "Download/Update DOPE")
-                        read -r -p "Press 'A' to update DOPE0, Press 'B' to update DOPEX, Press 'E' to exit [a/b/E] " response
+                        read -r -p "Press 'A' to update DOPE00, Press 'B' to update DOPEX, Press 'E' to exit [a/b/E] " response
                         case "$response" in
                         [aA]) 
                             architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
     								echo -e "\e[0m"
-                                    read -r -p "This action will kill DOPE0 'screen' process, continue?? [y/N] " response
+                                    read -r -p "This action will kill DOPE00 'screen' process, continue?? [y/N] " response
                                     case "$response" in
                                     [yY][eE][sS]|[yY]) 
                                         echo "you chose choice $REPLY which is $opt"
                                         sleep 1
-                                        screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill | clear
+                                        screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill | clear
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
@@ -154,25 +154,25 @@ else
                                         chmod +x ./up.sh
                                         echo "Downloaded/Updated succesfully"
                                         sleep 3
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
     									clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                     esac
                                         ;;  
                                 armhf)
     								echo -e "\e[0m"
-                                    read -r -p "This action will kill DOPE0 'screen' process, continue?? [y/N] " response
+                                    read -r -p "This action will kill DOPE00 'screen' process, continue?? [y/N] " response
                                     case "$response" in
                                     [yY][eE][sS]|[yY]) 
                                         echo "you chose choice $REPLY which is $opt"
                                         sleep 1
-                                        screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill | clear
+                                        screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill | clear
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
@@ -183,14 +183,14 @@ else
                                         sudo chmod -R 777 ./
                                         echo "Downloaded/Updated succesfully"
                                         sleep 3
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
     									clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                     esac
                                         ;;
@@ -248,14 +248,14 @@ else
                                         echo "FINISHED MIGRATION"
                                         echo "All DOPEX Downloaded/Updated succesfully"
                                         sleep 3
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
     									clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                     esac
                                         ;;  
@@ -293,14 +293,14 @@ else
                                         echo "FINISHED MIGRATION"
                                         echo "All DOPEX Downloaded/Updated succesfully"
                                         sleep 3
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
     									clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
-                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                                        echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                     esac
                                         ;;
@@ -316,11 +316,11 @@ else
     						clear
                             echo "Your chose exit, what you want to do? "  
                             sleep 1
-                            echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE0  5) Quit"
+                            echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
                             echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                         esac
                 ;;
-            "Run DOPE0")
+            "Run DOPE00")
                 architecture="$(dpkg --print-architecture)"
                 case $architecture in
                     amd64)
@@ -333,11 +333,11 @@ else
                 echo "or CTRL+A then CTRL+D"
                 echo "bot will keep running"
                 sleep 5
-                screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+                screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
                 clear
-                screen -S DOPE0 ./DOPE.cli
+                screen -S DOPE00 ./DOPE.cli
                 echo -e "\e[96m\e[1m"
-                echo "1) Install Dependencies 3) Run DOPE0  5) Quit"
+                echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
 
                             ;;  
@@ -351,11 +351,11 @@ else
                 echo "or CTRL+A then CTRL+D"
                 echo "bot will keep running"
                 sleep 5
-                screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+                screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
                 clear
-                screen -S DOPE0 ./DOPE.Cli
+                screen -S DOPE00 ./DOPE.Cli
                 echo -e "\e[96m\e[1m"
-                echo "1) Install Dependencies 3) Run DOPE0  5) Quit"
+                echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                             ;;
                     *)
@@ -369,7 +369,7 @@ else
             "DOPE EXPERIMENTAL")
                 bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/DOPE-EXPERIMENTAL.sh)
                 echo -e "\e[96m\e[1m"
-                echo "1) Install Dependencies 3) Run DOPE0  5) Quit"
+                echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                     ;;
             "Quit")

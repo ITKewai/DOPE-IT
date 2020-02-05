@@ -1,34 +1,34 @@
 #!/bin/bash
 echo -e "\e[32m\e[1m######"
 PS3='Which DOPE you want to start/reboot?: '
-options=("DOPE1" "DOPE2" "DOPE3" "DOPE4" "DOPE5" "DOPE6" "DOPE7" "DOPE8" "DOPE9" "DOPE10" "DOPE0" "DOPEX" "Back")
+options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "DOPEX" "Back")
 select opt in "${options[@]}"
 do
     case $opt in
-        "DOPE1")
+        "DOPE01")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE1" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE01" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/1
-                            screen -S DOPE1 ./DOPE.cli
+                            screen -S DOPE01 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE1" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE01" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/1
-                            screen -S DOPE1 ./DOPE.Cli
+                            screen -S DOPE01 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -38,30 +38,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE2")
+        "DOPE02")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE2" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE02" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/2
-                            screen -S DOPE2 ./DOPE.cli
+                            screen -S DOPE02 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE2" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE02" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/2
-                            screen -S DOPE2 ./DOPE.Cli
+                            screen -S DOPE02 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -71,30 +71,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE3")
+        "DOPE03")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE3" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE03" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/3
-                            screen -S DOPE3 ./DOPE.cli
+                            screen -S DOPE03 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE3" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE03" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/3
-                            screen -S DOPE3 ./DOPE.Cli
+                            screen -S DOPE03 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -104,30 +104,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE4")
+        "DOPE04")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE4" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE04" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/4
-                            screen -S DOPE4 ./DOPE.cli
+                            screen -S DOPE04 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE4" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE04" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/4
-                            screen -S DOPE4 ./DOPE.Cli
+                            screen -S DOPE04 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -137,30 +137,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE5")
+        "DOPE05")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE5" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE05" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/5
-                            screen -S DOPE5 ./DOPE.cli
+                            screen -S DOPE05 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE5" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE05" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/5
-                            screen -S DOPE5 ./DOPE.Cli
+                            screen -S DOPE05 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -170,30 +170,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE6")
+        "DOPE06")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE6" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE06" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/6
-                            screen -S DOPE6 ./DOPE.cli
+                            screen -S DOPE06 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE6" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE06" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/6
-                            screen -S DOPE6 ./DOPE.Cli
+                            screen -S DOPE06 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -203,30 +203,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE7")
+        "DOPE07")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE7" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE07" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/7
-                            screen -S DOPE7 ./DOPE.cli
+                            screen -S DOPE07 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE7" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE07" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/7
-                            screen -S DOPE7 ./DOPE.Cli
+                            screen -S DOPE07 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -236,30 +236,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE8")
+        "DOPE08")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE8" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE08" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/8
-                            screen -S DOPE8 ./DOPE.cli
+                            screen -S DOPE08 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE8" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE08" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/8
-                            screen -S DOPE8 ./DOPE.Cli
+                            screen -S DOPE08 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -269,30 +269,30 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE9")
+        "DOPE09")
                 architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE9" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE09" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/9
-                            screen -S DOPE9 ./DOPE.cli
+                            screen -S DOPE09 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
-                            screen -ls  | egrep "^\s*[0-9]+.DOPE9" | awk -F "." '{print $1}' | xargs kill
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE09" | awk -F "." '{print $1}' | xargs kill
                             clear
                             cd
                             cd DOPEMULTI/9
-                            screen -S DOPE9 ./DOPE.Cli
+                            screen -S DOPE09 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -312,9 +312,9 @@ do
                             cd DOPEMULTI/10
                             screen -S DOPE10 ./DOPE.cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                     ;;  
                                 armhf)
                             screen -ls  | egrep "^\s*[0-9]+.DOPE10" | awk -F "." '{print $1}' | xargs kill
@@ -323,9 +323,9 @@ do
                             cd DOPEMULTI/10
                             screen -S DOPE10 ./DOPE.Cli
                             echo -e "\e[32m\e[1m"
-							echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-							echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-							echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+							echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+							echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+							echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                         ;;
                                 *)
                                 echo "Something went wrong, write IT |Kewai"
@@ -335,34 +335,34 @@ do
                                 ;;
                             esac
             ;;
-        "DOPE0")
-				read -r -p "Remember that DOPE0 is the first bot, continue? [y/N] " response
+        "DOPE00")
+				read -r -p "Remember that DOPE00 is the first bot, continue? [y/N] " response
 				                    case "$response" in
 				                    [yY][eE][sS]|[yY]) 
 				                        echo "you chose choice $REPLY which is $opt"
 						                architecture="$(dpkg --print-architecture)"
 						                            case $architecture in
 						                                amd64)
-						                            screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+						                            screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
 						                            clear
 						                            cd
 						                            cd DOPE
-						                            screen -S DOPE0 ./DOPE.cli
+						                            screen -S DOPE00 ./DOPE.cli
 						                            echo -e "\e[32m\e[1m"
-													echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-													echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-													echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+													echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+													echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+													echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
 						                                    ;;  
 						                                armhf)
-						                            screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+						                            screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
 						                            clear
 						                            cd
 						                            cd DOPE
-						                            screen -S DOPE0 ./DOPE.Cli
+						                            screen -S DOPE00 ./DOPE.Cli
 						                            echo -e "\e[32m\e[1m"
-													echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-													echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-													echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+													echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+													echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+													echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
 						                                        ;;
 						                                *)
 						                                echo "Something went wrong, write IT |Kewai"
@@ -375,9 +375,9 @@ do
 				                    *)
 				                        echo "Your chose No, what you want to do? "  
 				                        sleep 1
-				            			echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-										echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-										echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+				            			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+										echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+										echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
 				                    esac
 			;;
         "DOPEX")
@@ -394,91 +394,91 @@ do
                                                 cd DOPE
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[1]="\e[92m\e[1mDOPE0: STARTED"
-                                                        screen -S DOPE0 -dm ./DOPE.cli
+                                                        KEY[1]="\e[92m\e[1mDOPE00: STARTED"
+                                                        screen -S DOPE00 -dm ./DOPE.cli
                                                     else
-                                                        KEY[1]="\e[91m\e[1mDOPE0: KEY NOT FOUND"
+                                                        KEY[1]="\e[91m\e[1mDOPE00: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/1
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[1]="\e[92m\e[1mDOPE1: STARTED"
-                                                        screen -S DOPE1 -dm ./DOPE.cli
+                                                        KEY[1]="\e[92m\e[1mDOPE01: STARTED"
+                                                        screen -S DOPE01 -dm ./DOPE.cli
                                                     else
-                                                        KEY[1]="\e[91m\e[1mDOPE1: KEY NOT FOUND"
+                                                        KEY[1]="\e[91m\e[1mDOPE01: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/2
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[2]="\e[92m\e[1mDOPE2: STARTED"
-                                                        screen -S DOPE2 -dm ./DOPE.cli
+                                                        KEY[2]="\e[92m\e[1mDOPE02: STARTED"
+                                                        screen -S DOPE02 -dm ./DOPE.cli
                                                     else
-                                                        KEY[2]="\e[91m\e[1mDOPE2: KEY NOT FOUND"
+                                                        KEY[2]="\e[91m\e[1mDOPE02: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/3
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[3]="\e[92m\e[1mDOPE3: STARTED"
-                                                        screen -S DOPE3 -dm ./DOPE.cli
+                                                        KEY[3]="\e[92m\e[1mDOPE03: STARTED"
+                                                        screen -S DOPE03 -dm ./DOPE.cli
                                                     else
-                                                        KEY[3]="\e[91m\e[1mDOPE3: KEY NOT FOUND"
+                                                        KEY[3]="\e[91m\e[1mDOPE03: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/4
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[4]="\e[92m\e[1mDOPE4: STARTED"
-                                                        screen -S DOPE4 -dm ./DOPE.cli
+                                                        KEY[4]="\e[92m\e[1mDOPE04: STARTED"
+                                                        screen -S DOPE04 -dm ./DOPE.cli
                                                     else
-                                                        KEY[4]="\e[91m\e[1mDOPE4: KEY NOT FOUND"
+                                                        KEY[4]="\e[91m\e[1mDOPE04: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/5
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[5]="\e[92m\e[1mDOPE5: STARTED"
-                                                        screen -S DOPE5 -dm ./DOPE.cli
+                                                        KEY[5]="\e[92m\e[1mDOPE05: STARTED"
+                                                        screen -S DOPE05 -dm ./DOPE.cli
                                                     else
-                                                        KEY[5]="\e[91m\e[1mDOPE5: KEY NOT FOUND"
+                                                        KEY[5]="\e[91m\e[1mDOPE05: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/6
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[6]="\e[92m\e[1mDOPE6: STARTED"
-                                                        screen -S DOPE6 -dm ./DOPE.cli
+                                                        KEY[6]="\e[92m\e[1mDOPE06: STARTED"
+                                                        screen -S DOPE06 -dm ./DOPE.cli
                                                     else
-                                                        KEY[6]="\e[91m\e[1mDOPE6: KEY NOT FOUND"
+                                                        KEY[6]="\e[91m\e[1mDOPE06: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/7
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[7]="\e[92m\e[1mDOPE7: STARTED"
-                                                        screen -S DOPE7 -dm ./DOPE.cli
+                                                        KEY[7]="\e[92m\e[1mDOPE07: STARTED"
+                                                        screen -S DOPE07 -dm ./DOPE.cli
                                                     else
-                                                        KEY[7]="\e[91m\e[1mDOPE7: KEY NOT FOUND"
+                                                        KEY[7]="\e[91m\e[1mDOPE07: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/8
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[8]="\e[92m\e[1mDOPE8: STARTED"
-                                                        screen -S DOPE8 -dm ./DOPE.cli
+                                                        KEY[8]="\e[92m\e[1mDOPE08: STARTED"
+                                                        screen -S DOPE08 -dm ./DOPE.cli
                                                     else
-                                                        KEY[8]="\e[91m\e[1mDOPE8: KEY NOT FOUND"
+                                                        KEY[8]="\e[91m\e[1mDOPE08: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/9
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[9]="\e[92m\e[1mDOPE9: STARTED"
-                                                        screen -S DOPE9 -dm ./DOPE.cli
+                                                        KEY[9]="\e[92m\e[1mDOPE09: STARTED"
+                                                        screen -S DOPE09 -dm ./DOPE.cli
                                                     else
-                                                        KEY[9]="\e[91m\e[1mDOPE9: KEY NOT FOUND"
+                                                        KEY[9]="\e[91m\e[1mDOPE09: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/10
@@ -491,8 +491,8 @@ do
                                                 fi
                                             for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                             echo -e "\e[32m\e[1m"
-                                            echo "1) DOPE1      3) DOPE3     5) DOPE5     7) DOPE7     9) DOPE9    11) DOPEX"
-                                            echo "2) DOPE2      4) DOPE4     6) DOPE6     8) DOPE8    10) DOPE10   12) Back"
+                                            echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPEX"
+                                            echo "2) DOPE02      4) DOPE04     6) DOPE06     8) DOPE08    10) DOPE10   12) Back"
                                             ;;  
                                         armhf)
                                                 file="KEY"
@@ -502,82 +502,82 @@ do
                                                 cd DOPEMULTI/1
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[1]="\e[92m\e[1mDOPE1: STARTED"
-                                                        screen -S DOPE1 -dm ./DOPE.Cli
+                                                        KEY[1]="\e[92m\e[1mDOPE01: STARTED"
+                                                        screen -S DOPE01 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[1]="\e[91m\e[1mDOPE1: KEY NOT FOUND"
+                                                        KEY[1]="\e[91m\e[1mDOPE01: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/2
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[2]="\e[92m\e[1mDOPE2: STARTED"
-                                                        screen -S DOPE2 -dm ./DOPE.Cli
+                                                        KEY[2]="\e[92m\e[1mDOPE02: STARTED"
+                                                        screen -S DOPE02 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[2]="\e[91m\e[1mDOPE2: KEY NOT FOUND"
+                                                        KEY[2]="\e[91m\e[1mDOPE02: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/3
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[3]="\e[92m\e[1mDOPE3: STARTED"
-                                                        screen -S DOPE3 -dm ./DOPE.Cli
+                                                        KEY[3]="\e[92m\e[1mDOPE03: STARTED"
+                                                        screen -S DOPE03 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[3]="\e[91m\e[1mDOPE3: KEY NOT FOUND"
+                                                        KEY[3]="\e[91m\e[1mDOPE03: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/4
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[4]="\e[92m\e[1mDOPE4: STARTED"
-                                                        screen -S DOPE4 -dm ./DOPE.Cli
+                                                        KEY[4]="\e[92m\e[1mDOPE04: STARTED"
+                                                        screen -S DOPE04 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[4]="\e[91m\e[1mDOPE4: KEY NOT FOUND"
+                                                        KEY[4]="\e[91m\e[1mDOPE04: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/5
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[5]="\e[92m\e[1mDOPE5: STARTED"
-                                                        screen -S DOPE5 -dm ./DOPE.Cli
+                                                        KEY[5]="\e[92m\e[1mDOPE05: STARTED"
+                                                        screen -S DOPE05 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[5]="\e[91m\e[1mDOPE5: KEY NOT FOUND"
+                                                        KEY[5]="\e[91m\e[1mDOPE05: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/6
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[6]="\e[92m\e[1mDOPE6: STARTED"
-                                                        screen -S DOPE6 -dm ./DOPE.Cli
+                                                        KEY[6]="\e[92m\e[1mDOPE06: STARTED"
+                                                        screen -S DOPE06 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[6]="\e[91m\e[1mDOPE6: KEY NOT FOUND"
+                                                        KEY[6]="\e[91m\e[1mDOPE06: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/7
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[7]="\e[92m\e[1mDOPE7: STARTED"
-                                                        screen -S DOPE7 -dm ./DOPE.Cli
+                                                        KEY[7]="\e[92m\e[1mDOPE07: STARTED"
+                                                        screen -S DOPE07 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[7]="\e[91m\e[1mDOPE7: KEY NOT FOUND"
+                                                        KEY[7]="\e[91m\e[1mDOPE07: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/8
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[8]="\e[92m\e[1mDOPE8: STARTED"
-                                                        screen -S DOPE8 -dm ./DOPE.Cli
+                                                        KEY[8]="\e[92m\e[1mDOPE08: STARTED"
+                                                        screen -S DOPE08 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[8]="\e[91m\e[1mDOPE8: KEY NOT FOUND"
+                                                        KEY[8]="\e[91m\e[1mDOPE08: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/9
                                                 if [ -f "$file" ]
                                                     then
-                                                        KEY[9]="\e[92m\e[1mDOPE9: STARTED"
-                                                        screen -S DOPE9 -dm ./DOPE.Cli
+                                                        KEY[9]="\e[92m\e[1mDOPE09: STARTED"
+                                                        screen -S DOPE09 -dm ./DOPE.Cli
                                                     else
-                                                        KEY[9]="\e[91m\e[1mDOPE9: KEY NOT FOUND"
+                                                        KEY[9]="\e[91m\e[1mDOPE09: KEY NOT FOUND"
                                                 fi
                                                 cd
                                                 cd DOPEMULTI/10
@@ -590,9 +590,9 @@ do
                                                 fi
                                             for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                             echo -e "\e[32m\e[1m"
-											echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-											echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-											echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+											echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+											echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+											echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                                 ;;
                                         *)
                                         echo "Something went wrong, write IT |Kewai"
@@ -605,9 +605,9 @@ do
                                 *)
                                     echo "Your chose No, what you want to do? "  
                                     sleep 1
-									echo "1) DOPE1     4) DOPE4	 7) DOPE7   10) DOPE10	13) Back"
-									echo "2) DOPE2     5) DOPE5	 8) DOPE8   11) DOPE0"
-									echo "3) DOPE3     6) DOPE6	 9) DOPE9   12) DOPEX"
+									echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+									echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+									echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
                                 esac
             ;;
         "Back")
