@@ -128,7 +128,7 @@ else
                 sudo pip install wget requests
                 echo -e "\e[96m\e[1mDependencies installed succesfully"
                 sleep 1
-                echo "1) Install Dependencies 3) Run DOPE0  5) Quit"
+                echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                 ;;
             "Download/Update DOPE")
