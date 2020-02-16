@@ -1,0 +1,1 @@
+screen -ls | grep -Po 'DOPE\d+'

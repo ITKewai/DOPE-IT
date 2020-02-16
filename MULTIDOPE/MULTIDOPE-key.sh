@@ -1,6 +1,6 @@
 #!/bin/bash
 PS3='Which key you want to delete?: '
-options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE010" "DOPE00" "Back")
+options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "Back")
 select opt in "${options[@]}"
 do
     case $opt in
