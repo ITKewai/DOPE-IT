@@ -361,16 +361,16 @@ else
                                         cd
                                         mkdir -p DOPEMULTI/DOPE0KEY
                                         sudo mv ./DOPE/KEY DOPEMULTI/DOPE0KEY | clear
-                                        sudo cp -r DOPE DOPEMULTI/1
-                                        sudo cp -r DOPE DOPEMULTI/2
-                                        sudo cp -r DOPE DOPEMULTI/3
-                                        sudo cp -r DOPE DOPEMULTI/4
-                                        sudo cp -r DOPE DOPEMULTI/5
-                                        sudo cp -r DOPE DOPEMULTI/6
-                                        sudo cp -r DOPE DOPEMULTI/7
-                                        sudo cp -r DOPE DOPEMULTI/8
-                                        sudo cp -r DOPE DOPEMULTI/9
-                                        sudo cp -r DOPE DOPEMULTI/10
+                                        sudo cp -a DOPE DOPEMULTI/1
+                                        sudo cp -a DOPE DOPEMULTI/2
+                                        sudo cp -a DOPE DOPEMULTI/3
+                                        sudo cp -a DOPE DOPEMULTI/4
+                                        sudo cp -a DOPE DOPEMULTI/5
+                                        sudo cp -a DOPE DOPEMULTI/6
+                                        sudo cp -a DOPE DOPEMULTI/7
+                                        sudo cp -a DOPE DOPEMULTI/8
+                                        sudo cp -a DOPE DOPEMULTI/9
+                                        sudo cp -a DOPE DOPEMULTI/10
                                         sudo mv ./DOPEMULTI/DOPE0KEY/KEY DOPE | clear
                                         echo "FINISHED MIGRATION"
                                         echo "All DOPEX Downloaded/Updated succesfully"
