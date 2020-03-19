@@ -361,16 +361,16 @@ else
                                         cd
                                         mkdir -p DOPEMULTI/DOPE0KEY
                                         sudo mv ./DOPE/KEY DOPEMULTI/DOPE0KEY | clear
-                                        sudo cp -r DOPE DOPEMULTI/1
-                                        sudo cp -r DOPE DOPEMULTI/2
-                                        sudo cp -r DOPE DOPEMULTI/3
-                                        sudo cp -r DOPE DOPEMULTI/4
-                                        sudo cp -r DOPE DOPEMULTI/5
-                                        sudo cp -r DOPE DOPEMULTI/6
-                                        sudo cp -r DOPE DOPEMULTI/7
-                                        sudo cp -r DOPE DOPEMULTI/8
-                                        sudo cp -r DOPE DOPEMULTI/9
-                                        sudo cp -r DOPE DOPEMULTI/10
+                                        sudo cp -TR DOPE DOPEMULTI/1
+                                        sudo cp -TR DOPE DOPEMULTI/2
+                                        sudo cp -TR DOPE DOPEMULTI/3
+                                        sudo cp -TR DOPE DOPEMULTI/4
+                                        sudo cp -TR DOPE DOPEMULTI/5
+                                        sudo cp -TR DOPE DOPEMULTI/6
+                                        sudo cp -TR DOPE DOPEMULTI/7
+                                        sudo cp -TR DOPE DOPEMULTI/8
+                                        sudo cp -TR DOPE DOPEMULTI/9
+                                        sudo cp -TR DOPE DOPEMULTI/10
                                         sudo mv ./DOPEMULTI/DOPE0KEY/KEY DOPE | clear
                                         cd
                                         cd DOPEMULTI
