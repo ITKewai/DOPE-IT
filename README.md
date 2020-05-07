@@ -42,4 +42,5 @@ https://youtu.be/BWBzQpY7tfU
 >added DELETE KEY feature
 >added UNINSTALLER
 >added LIST OF RUNNING DOPE SESSION
+> fixed "Download/Update DOPE" DOPEX for armhf
 ```
