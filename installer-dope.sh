@@ -196,7 +196,7 @@ else
                     ;;
                 esac
                 # INSTALLA DIPENDENZE DOPE
-                sudo apt install curl libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4-gnutls-dev python-setuptools python-requests python python3-pip python-pip screen -y
+                sudo apt install curl libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4-gnutls-dev python-setuptools python-requests python python3-pip screen -y
                 # INSTALLA DIPENDENZA PER VERSIONE DI UBUNTU
                 $version
                 echo -e  "\e[96m\e[1mSTAGE 2 DONE\e[0m"
@@ -207,7 +207,7 @@ else
                 [ -f libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb ] && sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb && rm -f libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb
                 # FINE LOGICA UBUNTU 19
                 echo -e  "\e[96m\e[1mSTAGE 3 DONE\e[0m"
-                sudo pip install wget requests
+                sudo pip3 install wget requests
                 echo -e "\e[96m\e[1mDependencies installed succesfully"
                 sleep 1
                 echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
