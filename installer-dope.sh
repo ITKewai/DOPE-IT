@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -f /etc/centos-release ]; then
-	clear
+    clear
     echo -e "\e[92m\e[1mSCRIPT WRITED BY \e[5mIT | Kewai \e[5m\e[0m"
     echo -e "\e[96m\e[1mREMEMBER TO INSTALL DEPENDECIES BEFORE DOWNLOAD DOPE"
     PS3='Please enter your choice: '
@@ -192,6 +192,8 @@ else
                             dpkg --print-architecture
                             exit 1
                             ;;
+                    20.*)
+                        echo "TEST"
                         esac
                     ;;
                 esac
@@ -220,7 +222,7 @@ else
                             architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
-    								echo -e "\e[0m"
+                                    echo -e "\e[0m"
                                     read -r -p "This action will kill DOPE00 'screen' process, continue?? [y/N] " response
                                     case "$response" in
                                     [yY][eE][sS]|[yY]) 
@@ -240,7 +242,7 @@ else
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
-    									clear
+                                        clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
                                         echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
@@ -248,7 +250,7 @@ else
                                     esac
                                         ;;  
                                 armhf)
-    								echo -e "\e[0m"
+                                    echo -e "\e[0m"
                                     read -r -p "This action will kill DOPE00 'screen' process, continue?? [y/N] " response
                                     case "$response" in
                                     [yY][eE][sS]|[yY]) 
@@ -269,7 +271,7 @@ else
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
-    									clear
+                                        clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
                                         echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
@@ -286,8 +288,8 @@ else
                             ;;
                         [bB]) 
                             echo -e "\e[31mREMEMBER:\e[0m TO RUN 10 DOPE YOU NEED MIN 2/3 GB OF RAM"
-    						echo -e "Also you need \e[31m1GB of free space for ARM devices \e[0m"
-    						echo -e "or\e[31m 300mb for x64 bit devices \e[0m"
+                            echo -e "Also you need \e[31m1GB of free space for ARM devices \e[0m"
+                            echo -e "or\e[31m 300mb for x64 bit devices \e[0m"
                             architecture="$(dpkg --print-architecture)"
                             case $architecture in
                                 amd64)
@@ -334,7 +336,7 @@ else
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
-    									clear
+                                        clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
                                         echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
@@ -383,7 +385,7 @@ else
                                         echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                                         ;;
                                     *)
-    									clear
+                                        clear
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
                                         echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
@@ -399,7 +401,7 @@ else
                             esac
                             ;;
                         *)
-    						clear
+                            clear
                             echo "Your chose exit, what you want to do? "  
                             sleep 1
                             echo -e "\e[96m\e[1m1) Install Dependencies 3) Run DOPE00  5) Quit"
