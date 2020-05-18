@@ -184,29 +184,42 @@ else
                                 version="wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb"
                                 ;;  
                             armhf)
-                                version="wget http://91.189.91.11/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb"
+                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/libssl1.0.0_1.0.2n-1ubuntu5_armhf.deb"
                                     ;;
                             *)
                             echo "Something went wrong, write IT |Kewai"
                             echo "Provide him this code"
                             dpkg --print-architecture
                             exit 1
+                        esac
                             ;;
                     20.*)
-                        echo "TEST"
+                        architecture="$(dpkg --print-architecture)"
+                        case $architecture in
+                            amd64)
+                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb"
+                                ;;  
+                            armhf)
+                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/libssl1.0.0_1.0.2n-1ubuntu5_armhf.deb"
+                                    ;;
+                            *)
+                            echo "Something went wrong, write IT |Kewai"
+                            echo "Provide him this code"
+                            dpkg --print-architecture
+                            exit 1
                         esac
                     ;;
                 esac
                 # INSTALLA DIPENDENZE DOPE
-                sudo apt install curl libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4-gnutls-dev python-setuptools python-requests python python3-pip screen -y
+                sudo apt install curl libkrb5-3 zlib1g libunwind8 libuuid1 libc6 libstdc++6 libgcc1 libcurl4-gnutls-dev python3-setuptools python3-requests python3 python3-pip screen -y
                 # INSTALLA DIPENDENZA PER VERSIONE DI UBUNTU
                 $version
                 echo -e  "\e[96m\e[1mSTAGE 2 DONE\e[0m"
                 # INIZIO LOGICA UBUNTU 19
                 # SE libssl1.0.0_1.0.2n-1ubuntu6.2_amd64 ESISTE INSTALLA POI RIMUOVI FILE
                 [ -f libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb ] && sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb && rm -f libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb
-                # SE libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb  ESISTE INSTALLA POI RIMUOVI FILE 
-                [ -f libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb ] && sudo dpkg -i libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb && rm -f libssl1.0.0_1.0.2n-1ubuntu6.2_armhf.deb
+                # SE llibssl1.0.0_1.0.2n-1ubuntu5_armhf.deb  ESISTE INSTALLA POI RIMUOVI FILE 
+                [ -f llibssl1.0.0_1.0.2n-1ubuntu5_armhf.deb ] && sudo dpkg -i llibssl1.0.0_1.0.2n-1ubuntu5_armhf.deb && rm -f llibssl1.0.0_1.0.2n-1ubuntu5_armhf.deb
                 # FINE LOGICA UBUNTU 19
                 echo -e  "\e[96m\e[1mSTAGE 3 DONE\e[0m"
                 sudo pip3 install wget requests
@@ -232,7 +245,7 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python AutoUpdater.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
                                         chmod +x ./DOPE.cli
                                         wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
                                         chmod +x ./up.sh
@@ -260,7 +273,7 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdaterARM.py" && python AutoUpdaterARM.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdaterARM.py" && python3 AutoUpdaterARM.py
                                         wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
                                         sudo apt install unzip -y | clear
                                         unzip -o DOPE.cli-arm.zip
@@ -303,7 +316,7 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python AutoUpdater.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
                                         chmod +x ./DOPE.cli
                                         wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
                                         chmod +x ./up.sh
@@ -354,7 +367,7 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdaterARM.py" && python AutoUpdaterARM.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdaterARM.py" && python3 AutoUpdaterARM.py
                                         wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
                                         sudo apt install unzip -y | clear
                                         unzip -o DOPE.cli-arm.zip
