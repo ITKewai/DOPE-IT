@@ -448,7 +448,7 @@ if [ -f /etc/centos-release ]; then
 else
     echo -e "\e[1m\e[33mDOPE LOG MENU"
     PS3='Which DOPE you want to start LOG?: '
-    options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "Back")
+    options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE11" "DOPEE12" "DOPE00" "Back")
     select opt in "${options[@]}"
     do
         case $opt in
