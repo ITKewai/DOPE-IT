@@ -13,9 +13,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/1
                                 screen -S DOPE01 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE02")
 
@@ -25,9 +25,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/2
                                 screen -S DOPE02 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE03")
 
@@ -37,9 +37,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/3
                                 screen -S DOPE03 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE04")
 
@@ -49,9 +49,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/4
                                 screen -S DOPE04 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE05")
 
@@ -61,9 +61,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/5
                                 screen -S DOPE05 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE06")
 
@@ -73,9 +73,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/6
                                 screen -S DOPE06 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE07")
 
@@ -85,9 +85,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/7
                                 screen -S DOPE07 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE08")
 
@@ -97,9 +97,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/8
                                 screen -S DOPE08 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE09")
 
@@ -109,9 +109,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/9
                                 screen -S DOPE09 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE10")
 
@@ -121,9 +121,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/10
                                 screen -S DOPE10 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE11")
 
@@ -133,9 +133,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/11
                                 screen -S DOPE11 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE12")
 
@@ -145,9 +145,9 @@ if [ -f /etc/centos-release ]; then
                                 cd DOPEMULTI/12
                                 screen -S DOPE12 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                 ;;
             "DOPE00")
                     read -r -p "Remember that DOPE00 is the first bot, continue? [y/N] " response
@@ -160,16 +160,16 @@ if [ -f /etc/centos-release ]; then
                                             cd DOPE
                                             screen -S DOPE00 ./DOPE.cli
                                             echo -e "\e[32m\e[1m"
-                                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                            echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                            echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                            echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                             ;;
                                         *)
                                             echo "Your chose No, what you want to do? "  
                                             sleep 1
-                                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                            echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                            echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                            echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                         esac
                 ;;
             "DOPEX")
@@ -335,9 +335,10 @@ else
                                 cd DOPEMULTI/1
                                 screen -S DOPE01 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE01" | awk -F "." '{print $1}' | xargs kill
@@ -346,9 +347,10 @@ else
                                 cd DOPEMULTI/1
                                 screen -S DOPE01 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -368,9 +370,10 @@ else
                                 cd DOPEMULTI/2
                                 screen -S DOPE02 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE02" | awk -F "." '{print $1}' | xargs kill
@@ -379,9 +382,10 @@ else
                                 cd DOPEMULTI/2
                                 screen -S DOPE02 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -401,9 +405,10 @@ else
                                 cd DOPEMULTI/3
                                 screen -S DOPE03 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE03" | awk -F "." '{print $1}' | xargs kill
@@ -412,9 +417,10 @@ else
                                 cd DOPEMULTI/3
                                 screen -S DOPE03 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -434,9 +440,10 @@ else
                                 cd DOPEMULTI/4
                                 screen -S DOPE04 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE04" | awk -F "." '{print $1}' | xargs kill
@@ -445,9 +452,10 @@ else
                                 cd DOPEMULTI/4
                                 screen -S DOPE04 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -467,9 +475,10 @@ else
                                 cd DOPEMULTI/5
                                 screen -S DOPE05 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE05" | awk -F "." '{print $1}' | xargs kill
@@ -478,9 +487,10 @@ else
                                 cd DOPEMULTI/5
                                 screen -S DOPE05 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -500,9 +510,10 @@ else
                                 cd DOPEMULTI/6
                                 screen -S DOPE06 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE06" | awk -F "." '{print $1}' | xargs kill
@@ -511,9 +522,10 @@ else
                                 cd DOPEMULTI/6
                                 screen -S DOPE06 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -533,9 +545,10 @@ else
                                 cd DOPEMULTI/7
                                 screen -S DOPE07 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE07" | awk -F "." '{print $1}' | xargs kill
@@ -544,9 +557,10 @@ else
                                 cd DOPEMULTI/7
                                 screen -S DOPE07 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -566,9 +580,10 @@ else
                                 cd DOPEMULTI/8
                                 screen -S DOPE08 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE08" | awk -F "." '{print $1}' | xargs kill
@@ -577,9 +592,10 @@ else
                                 cd DOPEMULTI/8
                                 screen -S DOPE08 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -599,9 +615,10 @@ else
                                 cd DOPEMULTI/9
                                 screen -S DOPE09 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE09" | awk -F "." '{print $1}' | xargs kill
@@ -610,9 +627,10 @@ else
                                 cd DOPEMULTI/9
                                 screen -S DOPE09 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -632,9 +650,10 @@ else
                                 cd DOPEMULTI/10
                                 screen -S DOPE10 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                         ;;  
                                     armhf)
                                 screen -ls  | egrep "^\s*[0-9]+.DOPE10" | awk -F "." '{print $1}' | xargs kill
@@ -643,9 +662,10 @@ else
                                 cd DOPEMULTI/10
                                 screen -S DOPE10 ./DOPE.Cli
                                 echo -e "\e[32m\e[1m"
-                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
+
                                             ;;
                                     *)
                                     echo "Something went wrong, write IT |Kewai"
@@ -735,9 +755,9 @@ else
                                                         cd DOPE
                                                         screen -S DOPE00 ./DOPE.cli
                                                         echo -e "\e[32m\e[1m"
-                                                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                                        echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                                        echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                                        echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                                                 ;;  
                                                             armhf)
                                                         screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
@@ -746,9 +766,9 @@ else
                                                         cd DOPE
                                                         screen -S DOPE00 ./DOPE.Cli
                                                         echo -e "\e[32m\e[1m"
-                                                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                                        echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                                        echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                                        echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                                                     ;;
                                                             *)
                                                             echo "Something went wrong, write IT |Kewai"
@@ -761,9 +781,9 @@ else
                                         *)
                                             echo "Your chose No, what you want to do? "  
                                             sleep 1
-                                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                            echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                            echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                            echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                         esac
                 ;;
             "DOPEX")
@@ -895,8 +915,9 @@ else
                                                     fi
                                                 for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                                 echo -e "\e[32m\e[1m"
-                                                echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPEX"
-                                                echo "2) DOPE02      4) DOPE04     6) DOPE06     8) DOPE08    10) DOPE10   12) Back"
+                                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                                 ;;  
                                             armhf)
                                                     file="KEY"
@@ -1012,9 +1033,9 @@ else
                                                     fi
                                                 for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                                 echo -e "\e[32m\e[1m"
-                                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                                echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                                echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                                echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                                     ;;
                                             *)
                                             echo "Something went wrong, write IT |Kewai"
@@ -1027,9 +1048,9 @@ else
                                     *)
                                         echo "Your chose No, what you want to do? "  
                                         sleep 1
-                                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
-                                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
-                                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                        echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+                                        echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+                                        echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                                     esac
                 ;;
             "Back")

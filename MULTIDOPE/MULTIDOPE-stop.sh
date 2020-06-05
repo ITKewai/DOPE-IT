@@ -9,106 +9,106 @@ do
 			screen -ls  | egrep "^\s*[0-9]+.DOPE01" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE01 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
 
             ;;
         "DOPE02")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE02" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE02 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE03")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE03" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE03 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE04")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE04" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE04 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE05")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE05" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE05 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE06")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE06" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE06 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE07")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE07" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE07 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE08")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE08" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE08 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE09")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE09" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE09 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE10")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE10" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE10 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE11")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE11" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE11 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE12")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE12" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE12 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
             ;;
         "DOPE00")
 			screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE00 HAS BEEN STOPPED SUCCESSFULLY"
-			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+			echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+			echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+			echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
 			;;
         "DOPEX")
             read -r -p "Are you sure to stop ALL DOPE?? [y/N] " response
@@ -119,16 +119,16 @@ do
                         screen -ls  | egrep "^\s*[0-9]+.DOPE" | awk -F "." '{print $1}' | xargs kill
                         clear
                         echo "ALL DOPE HAS BEEN STOPPED SUCCESSFULLY"
-						echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-						echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-						echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+						echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+						echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+						echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                         ;;
                     *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-						echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
-						echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
-						echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+						echo "1) DOPE01    4) DOPE04   7) DOPE07  10) DOPE10  13) DOPE00"
+						echo "2) DOPE02    5) DOPE05   8) DOPE08  11) DOPE11  14) DOPEX"
+						echo "3) DOPE03    6) DOPE06   9) DOPE09  12) DOPE12  15) Back"
                     esac
                     ;;
         "Back")
