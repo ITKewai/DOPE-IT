@@ -25,14 +25,17 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE01 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG01 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
+
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE02")
@@ -52,14 +55,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE02 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG02 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE03")
@@ -79,14 +84,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE03 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG03 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE04")
@@ -106,14 +113,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE04 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG04 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE05")
@@ -133,14 +142,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE05 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG05 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE06")
@@ -160,14 +171,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE06 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG06 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE07")
@@ -187,14 +200,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE07 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG07 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE08")
@@ -214,14 +229,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE08 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG08 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
 
                 ;;
@@ -242,14 +259,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE09 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG09 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                 ;;
     "DOPE10")
@@ -269,14 +288,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE10 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG10 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;
     "DOPE11")
@@ -299,14 +320,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE11 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG11 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -326,14 +349,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE11 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG11 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -364,14 +389,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE12 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG12 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -391,14 +418,16 @@ if [ -f /etc/centos-release ]; then
                             screen -L -S DOPE12 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG12 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -472,14 +501,16 @@ else
                             screen -L -S DOPE01 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG01 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -499,14 +530,16 @@ else
                             screen -L -S DOPE01 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG01 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -537,14 +570,16 @@ else
                             screen -L -S DOPE02 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG02 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -564,14 +599,16 @@ else
                             screen -L -S DOPE02 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG02 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -602,14 +639,16 @@ else
                             screen -L -S DOPE03 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG03 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -629,14 +668,16 @@ else
                             screen -L -S DOPE03 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG03 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -667,14 +708,16 @@ else
                             screen -L -S DOPE04 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG04 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -694,14 +737,16 @@ else
                             screen -L -S DOPE04 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG04 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -732,14 +777,16 @@ else
                             screen -L -S DOPE05 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG05 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -759,14 +806,16 @@ else
                             screen -L -S DOPE05 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG05 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -797,14 +846,16 @@ else
                             screen -L -S DOPE06 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG06 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -824,14 +875,16 @@ else
                             screen -L -S DOPE06 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG06 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -862,14 +915,16 @@ else
                             screen -L -S DOPE07 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG07 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -889,14 +944,16 @@ else
                             screen -L -S DOPE07 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG07 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -927,14 +984,16 @@ else
                             screen -L -S DOPE08 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG08 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -954,14 +1013,16 @@ else
                             screen -L -S DOPE08 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG08 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -992,14 +1053,16 @@ else
                             screen -L -S DOPE09 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG09 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -1019,14 +1082,16 @@ else
                             screen -L -S DOPE09 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG09 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -1057,14 +1122,16 @@ else
                             screen -L -S DOPE10 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG10 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -1084,14 +1151,16 @@ else
                             screen -L -S DOPE10 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG10 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -1122,14 +1191,16 @@ else
                             screen -L -S DOPE11 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG11 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -1149,14 +1220,16 @@ else
                             screen -L -S DOPE11 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG11 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -1187,14 +1260,16 @@ else
                             screen -L -S DOPE12 ./DOPE.cli
                             echo -e "\e[1m\e[33mLOG12 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                             ;;  
                         armhf)
@@ -1214,14 +1289,16 @@ else
                             screen -L -S DOPE12 ./DOPE.Cli
                             echo -e "\e[1m\e[33mLOG12 IS STARTED SUCESSFULL"
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             ;;
                             *)
                             echo "Your chose No, what you want to do? "  
                             sleep 1
-                            echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                            echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                             esac
                                 ;;
                         *)
@@ -1252,14 +1329,16 @@ else
                         screen -L -S DOPE00 ./DOPE.cli
                         echo -e "\e[1m\e[33mLOG00 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                        echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                        echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                         esac
                         ;;  
                     armhf)
@@ -1279,14 +1358,16 @@ else
                         screen -L -S DOPE00 ./DOPE.Cli
                         echo -e "\e[1m\e[33mLOG00 IS STARTED SUCESSFULL"
                         sleep 1
-                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                        echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                         ;;
                         *)
                         echo "Your chose No, what you want to do? "  
                         sleep 1
-                        echo "1) DOPE01     3) DOPE03    5) DOPE05    7) DOPE07    9) DOPE09   11) DOPE00"
-                        echo "2) DOPE02     4) DOPE04    6) DOPE06    8) DOPE08   10) DOPE10  12) Back"
+                        echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10   13) DOPE00"
+                        echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE11   14) Back"
+                        echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEE12"
                         esac
                             ;;
                     *)
