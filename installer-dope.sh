@@ -40,9 +40,9 @@ if [ -f /etc/centos-release ]; then
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
                                         chmod +x ./DOPE.cli
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/up.sh"
                                         chmod +x ./up.sh
                                         echo "Downloaded/Updated succesfully"
                                         sleep 3
@@ -70,9 +70,9 @@ if [ -f /etc/centos-release ]; then
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
                                         chmod +x ./DOPE.cli
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/up.sh"
                                         chmod +x ./up.sh
                                         echo "STARTING MIGRATION"
                                         cd
@@ -140,7 +140,7 @@ if [ -f /etc/centos-release ]; then
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
                 ;;
             "DOPE EXPERIMENTAL")
-                bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/DOPE-EXPERIMENTAL.sh)
+                bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/DOPE-EXPERIMENTAL.sh)
                 echo -e "\e[96m\e[1m"
                 echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"
@@ -188,7 +188,7 @@ else
                                 version="wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl1.0/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb"
                                 ;;  
                             armhf)
-                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/libssl1.0.0_1.0.2n-1ubuntu5_armhf.deb"
+                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/libssl1.0.0_1.0.2n-1ubuntu5_armhf.deb"
                                     ;;
                             *)
                             echo "Something went wrong, write IT |Kewai"
@@ -201,10 +201,10 @@ else
                         architecture="$(dpkg --print-architecture)"
                         case $architecture in
                             amd64)
-                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb"
+                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb"
                                 ;;  
                             armhf)
-                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/libssl1.0.0_1.0.2n-1ubuntu5_armhf.deb"
+                                version="wget -N https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/libssl1.0.0_1.0.2n-1ubuntu5_armhf.deb"
                                     ;;
                             *)
                             echo "Something went wrong, write IT |Kewai"
@@ -249,9 +249,9 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
                                         chmod +x ./DOPE.cli
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/up.sh"
                                         chmod +x ./up.sh
                                         echo "Downloaded/Updated succesfully"
                                         sleep 3
@@ -277,8 +277,8 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdaterARM.py" && python3 AutoUpdaterARM.py
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/AUTOUPDATER/AutoUpdaterARM.py" && python3 AutoUpdaterARM.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/up.sh"
                                         sudo apt install unzip -y | clear
                                         unzip -o DOPE.cli-arm.zip
                                         sudo chmod -R 777 ./
@@ -320,9 +320,9 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/AUTOUPDATER/AutoUpdater.py" && python3 AutoUpdater.py
                                         chmod +x ./DOPE.cli
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/up.sh"
                                         chmod +x ./up.sh
                                         echo "STARTING MIGRATION"
                                         cd
@@ -375,8 +375,8 @@ else
                                         cd
                                         mkdir -p DOPE
                                         cd DOPE
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/AUTOUPDATER/AutoUpdaterARM.py" && python3 AutoUpdaterARM.py
-                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/up.sh"
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/AUTOUPDATER/AutoUpdaterARM.py" && python3 AutoUpdaterARM.py
+                                        wget -N "https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/up.sh"
                                         sudo apt install unzip -y | clear
                                         unzip -o DOPE.cli-arm.zip
                                         sudo chmod -R 777 ./
@@ -478,7 +478,7 @@ else
                 esac
                 ;;
             "DOPE EXPERIMENTAL")
-                bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/DOPE-EXPERIMENTAL.sh)
+                bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/DOPE-EXPERIMENTAL.sh)
                 echo -e "\e[96m\e[1m"
                 echo "1) Install Dependencies 3) Run DOPE00  5) Quit"
                 echo "2) Download/Update DOPE 4) DOPE EXPERIMENTAL"

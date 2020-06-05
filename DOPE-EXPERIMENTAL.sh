@@ -7,13 +7,13 @@ select opt in "${options[@]}"
 do
     case $opt in
         "MULTI DOPE")
-            bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/MULTIDOPE/MULTIDOPE-menu.sh)
+            bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/MULTIDOPE/MULTIDOPE-menu.sh)
             echo -e "\e[1m\e[33mWelcome to DOPE-EXPERIMENTAL"
             echo "1)MULTI DOPE      3)UNINSTALL ALL DOPE"
             echo "2)LOG FOR DOPEX   4)Back"
             ;;
         "LOG FOR DOPEX")
-            bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/master/MULTIDOPE/LOG-menu.sh)
+            bash <(wget -qO- https://raw.githubusercontent.com/ITKewai/DOPE-IT/beta/MULTIDOPE/LOG-menu.sh)
             echo -e "\e[1m\e[33mWelcome to DOPE-EXPERIMENTAL"
             echo "1)MULTI DOPE      3)UNINSTALL ALL DOPE"
             echo "2)LOG FOR DOPEX   4)Back"

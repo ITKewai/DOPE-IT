@@ -2,7 +2,7 @@
 if [ -f /etc/centos-release ]; then
     echo -e "\e[32m\e[1m######"
     PS3='Which DOPE you want to start/reboot?: '
-    options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "DOPEX" "Back")
+    options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE11" "DOPE12" "DOPE00" "DOPEX" "Back")
     select opt in "${options[@]}"
     do
         case $opt in
@@ -120,6 +120,30 @@ if [ -f /etc/centos-release ]; then
                                 cd
                                 cd DOPEMULTI/10
                                 screen -S DOPE10 ./DOPE.cli
+                                echo -e "\e[32m\e[1m"
+                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
+                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
+                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                ;;
+            "DOPE11")
+
+                                screen -ls  | egrep "^\s*[0-9]+.DOPE11" | awk -F "." '{print $1}' | xargs kill
+                                clear
+                                cd
+                                cd DOPEMULTI/11
+                                screen -S DOPE11 ./DOPE.cli
+                                echo -e "\e[32m\e[1m"
+                                echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
+                                echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
+                                echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                ;;
+            "DOPE12")
+
+                                screen -ls  | egrep "^\s*[0-9]+.DOPE12" | awk -F "." '{print $1}' | xargs kill
+                                clear
+                                cd
+                                cd DOPEMULTI/12
+                                screen -S DOPE12 ./DOPE.cli
                                 echo -e "\e[32m\e[1m"
                                 echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
                                 echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
@@ -254,6 +278,24 @@ if [ -f /etc/centos-release ]; then
                                             else
                                                 KEY[10]="\e[91m\e[1mDOPE10: KEY NOT FOUND"
                                         fi
+                                        cd
+                                        cd DOPEMULTI/11
+                                        if [ -f "$file" ]
+                                            then
+                                                KEY[11]="\e[92m\e[1mDOPE11: STARTED"
+                                                screen -S DOPE11 -dm ./DOPE.cli
+                                            else
+                                                KEY[11]="\e[91m\e[1mDOPE11: KEY NOT FOUND"
+                                        fi
+                                        cd
+                                        cd DOPEMULTI/12
+                                        if [ -f "$file" ]
+                                            then
+                                                KEY[12]="\e[92m\e[1mDOPE12: STARTED"
+                                                screen -S DOPE12 -dm ./DOPE.cli
+                                            else
+                                                KEY[12]="\e[91m\e[1mDOPE12: KEY NOT FOUND"
+                                        fi
                                     for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                     echo -e "\e[32m\e[1m"
                                     echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPEX"
@@ -279,7 +321,7 @@ if [ -f /etc/centos-release ]; then
 else
     echo -e "\e[32m\e[1m######"
     PS3='Which DOPE you want to start/reboot?: '
-    options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "DOPEX" "Back")
+    options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE11" "DOPE12" "DOPE00" "DOPEX" "Back")
     select opt in "${options[@]}"
     do
         case $opt in
@@ -613,6 +655,72 @@ else
                                     ;;
                                 esac
                 ;;
+            "DOPE11")
+                architecture="$(dpkg --print-architecture)"
+                            case $architecture in
+                                amd64)
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE11" | awk -F "." '{print $1}' | xargs kill
+                            clear
+                            cd
+                            cd DOPEMULTI/11
+                            screen -S DOPE11 ./DOPE.cli
+                            echo -e "\e[32m\e[1m"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                    ;;  
+                                armhf)
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE11" | awk -F "." '{print $1}' | xargs kill
+                            clear
+                            cd
+                            cd DOPEMULTI/11
+                            screen -S DOPE11 ./DOPE.Cli
+                            echo -e "\e[32m\e[1m"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                        ;;
+                                *)
+                                echo "Something went wrong, write IT |Kewai"
+                                echo "Provide him this code"
+                                dpkg --print-architecture
+                                exit 1
+                                ;;
+                            esac
+            ;;
+            "DOPE12")
+                architecture="$(dpkg --print-architecture)"
+                            case $architecture in
+                                amd64)
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE12" | awk -F "." '{print $1}' | xargs kill
+                            clear
+                            cd
+                            cd DOPEMULTI/12
+                            screen -S DOPE12 ./DOPE.cli
+                            echo -e "\e[32m\e[1m"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                    ;;  
+                                armhf)
+                            screen -ls  | egrep "^\s*[0-9]+.DOPE12" | awk -F "." '{print $1}' | xargs kill
+                            clear
+                            cd
+                            cd DOPEMULTI/12
+                            screen -S DOPE12 ./DOPE.Cli
+                            echo -e "\e[32m\e[1m"
+                            echo "1) DOPE01     4) DOPE04    7) DOPE07   10) DOPE10 13) Back"
+                            echo "2) DOPE02     5) DOPE05    8) DOPE08   11) DOPE00"
+                            echo "3) DOPE03     6) DOPE06    9) DOPE09   12) DOPEX"
+                                        ;;
+                                *)
+                                echo "Something went wrong, write IT |Kewai"
+                                echo "Provide him this code"
+                                dpkg --print-architecture
+                                exit 1
+                                ;;
+                            esac
+            ;;
             "DOPE00")
                     read -r -p "Remember that DOPE00 is the first bot, continue? [y/N] " response
                                         case "$response" in
@@ -767,6 +875,24 @@ else
                                                         else
                                                             KEY[10]="\e[91m\e[1mDOPE10: KEY NOT FOUND"
                                                     fi
+                                                    cd
+                                                    cd DOPEMULTI/11
+                                                    if [ -f "$file" ]
+                                                        then
+                                                            KEY[11]="\e[92m\e[1mDOPE11: STARTED"
+                                                            screen -S DOPE11 -dm ./DOPE.cli
+                                                        else
+                                                            KEY[11]="\e[91m\e[1mDOPE11: KEY NOT FOUND"
+                                                    fi
+                                                    cd
+                                                    cd DOPEMULTI/12
+                                                    if [ -f "$file" ]
+                                                        then
+                                                            KEY[12]="\e[92m\e[1mDOPE12: STARTED"
+                                                            screen -S DOPE12 -dm ./DOPE.cli
+                                                        else
+                                                            KEY[12]="\e[91m\e[1mDOPE12: KEY NOT FOUND"
+                                                    fi
                                                 for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                                 echo -e "\e[32m\e[1m"
                                                 echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPEX"
@@ -865,6 +991,24 @@ else
                                                             screen -S DOPE10 -dm ./DOPE.Cli
                                                         else
                                                             KEY[10]="\e[91m\e[1mDOPE10: KEY NOT FOUND"
+                                                    fi
+                                                    cd
+                                                    cd DOPEMULTI/11
+                                                    if [ -f "$file" ]
+                                                        then
+                                                            KEY[11]="\e[92m\e[1mDOPE11: STARTED"
+                                                            screen -S DOPE11 -dm ./DOPE.Cli
+                                                        else
+                                                            KEY[11]="\e[91m\e[1mDOPE11: KEY NOT FOUND"
+                                                    fi
+                                                    cd
+                                                    cd DOPEMULTI/12
+                                                    if [ -f "$file" ]
+                                                        then
+                                                            KEY[12]="\e[92m\e[1mDOPE12: STARTED"
+                                                            screen -S DOPE12 -dm ./DOPE.Cli
+                                                        else
+                                                            KEY[12]="\e[91m\e[1mDOPE12: KEY NOT FOUND"
                                                     fi
                                                 for i in "${KEY[@]}"; do echo -e  "$i\e[0m"; done
                                                 echo -e "\e[32m\e[1m"

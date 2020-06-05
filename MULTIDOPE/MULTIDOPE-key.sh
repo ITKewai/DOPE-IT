@@ -114,6 +114,26 @@ do
         	echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPE00"
         	echo "2) DOPE02      4) DOPE04     6) DOPE06     8) DOPE08    10) DOPE10    12) Back"
             ;;
+        "DOPE11")
+            screen -ls  | egrep "^\s*[0-9]+.DOPE11" | awk -F "." '{print $1}' | xargs kill
+            clear
+            cd
+            cd DOPEMULTI/11
+            sudo rm KEY
+            echo "KEY FROM DOPE10 REMOVED"
+            echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPE00"
+            echo "2) DOPE02      4) DOPE04     6) DOPE06     8) DOPE08    10) DOPE10    12) Back"
+            ;;
+        "DOPE12")
+            screen -ls  | egrep "^\s*[0-9]+.DOPE12" | awk -F "." '{print $1}' | xargs kill
+            clear
+            cd
+            cd DOPEMULTI/12
+            sudo rm KEY
+            echo "KEY FROM DOPE10 REMOVED"
+            echo "1) DOPE01      3) DOPE03     5) DOPE05     7) DOPE07     9) DOPE09    11) DOPE00"
+            echo "2) DOPE02      4) DOPE04     6) DOPE06     8) DOPE08    10) DOPE10    12) Back"
+            ;;
         "Back")
 		clear
         break

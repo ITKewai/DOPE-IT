@@ -1,7 +1,7 @@
 #!/bin/bash
 echo -e "\e[91m####"
 PS3='Which bot you want to stop?: '
-options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE00" "DOPEX" "Back")
+options=("DOPE01" "DOPE02" "DOPE03" "DOPE04" "DOPE05" "DOPE06" "DOPE07" "DOPE08" "DOPE09" "DOPE10" "DOPE11" "DOPE12" "DOPE00" "DOPEX" "Back")
 select opt in "${options[@]}"
 do
     case $opt in
@@ -82,6 +82,22 @@ do
 			screen -ls  | egrep "^\s*[0-9]+.DOPE10" | awk -F "." '{print $1}' | xargs kill
 			clear
             echo "DOPE10 HAS BEEN STOPPED SUCCESSFULLY"
+			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+            ;;
+        "DOPE11")
+			screen -ls  | egrep "^\s*[0-9]+.DOPE11" | awk -F "." '{print $1}' | xargs kill
+			clear
+            echo "DOPE11 HAS BEEN STOPPED SUCCESSFULLY"
+			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
+			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
+			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
+            ;;
+        "DOPE12")
+			screen -ls  | egrep "^\s*[0-9]+.DOPE12" | awk -F "." '{print $1}' | xargs kill
+			clear
+            echo "DOPE12 HAS BEEN STOPPED SUCCESSFULLY"
 			echo "1) DOPE01     4) DOPE04	 7) DOPE07   10) DOPE10	13) Back"
 			echo "2) DOPE02     5) DOPE05	 8) DOPE08   11) DOPE00"
 			echo "3) DOPE03     6) DOPE06	 9) DOPE09   12) DOPEX"
