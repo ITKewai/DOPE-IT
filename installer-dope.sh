@@ -58,7 +58,7 @@ if [ -f /etc/centos-release ]; then
                                     esac
                             ;;
                         [bB]) 
-                            echo -e "\e[31mREMEMBER:\e[0m TO RUN 10 DOPE YOU NEED MIN 2 GB OF RAM"
+                            echo -e "\e[31mREMEMBER:\e[0m TO RUN 12 DOPE YOU NEED MIN 2 GB OF RAM"
                             echo -e "Also you need \e[31m 300mb for x64 bit devices \e[0m"
                                     read -r -p "This action will kill any DOPE 'screen' process, continue?? [y/N] " response
                                     case "$response" in
@@ -96,6 +96,10 @@ if [ -f /etc/centos-release ]; then
                                         sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/9/DOPE.cli
                                         mkdir -p DOPEMULTI/10
                                         sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/10/DOPE.cli
+                                        mkdir -p DOPEMULTI/11
+                                        sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/11/DOPE.cli
+                                        mkdir -p DOPEMULTI/12
+                                        sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/12/DOPE.cli
                                         echo "FINISHED MIGRATION"
                                         echo "All DOPEX Downloaded/Updated succesfully"
                                         sleep 3
@@ -300,7 +304,7 @@ else
                             esac
                             ;;
                         [bB]) 
-                            echo -e "\e[31mREMEMBER:\e[0m TO RUN 10 DOPE YOU NEED MIN 2/3 GB OF RAM"
+                            echo -e "\e[31mREMEMBER:\e[0m TO RUN 12 DOPE YOU NEED MIN 2/3 GB OF RAM"
                             echo -e "Also you need \e[31m1GB of free space for ARM devices \e[0m"
                             echo -e "or\e[31m 300mb for x64 bit devices \e[0m"
                             architecture="$(dpkg --print-architecture)"
@@ -342,6 +346,10 @@ else
                                         sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/9/DOPE.cli
                                         mkdir -p DOPEMULTI/10
                                         sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/10/DOPE.cli
+                                        mkdir -p DOPEMULTI/11
+                                        sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/11/DOPE.cli
+                                        mkdir -p DOPEMULTI/12
+                                        sudo cp ./DOPE/DOPE.cli ./DOPEMULTI/12/DOPE.cli
                                         echo "FINISHED MIGRATION"
                                         echo "All DOPEX Downloaded/Updated succesfully"
                                         sleep 3
@@ -386,6 +394,8 @@ else
                                         sudo cp -TR DOPE DOPEMULTI/8
                                         sudo cp -TR DOPE DOPEMULTI/9
                                         sudo cp -TR DOPE DOPEMULTI/10
+                                        sudo cp -TR DOPE DOPEMULTI/11
+                                        sudo cp -TR DOPE DOPEMULTI/12
                                         sudo mv ./DOPEMULTI/DOPE0KEY/KEY DOPE | clear
                                         cd
                                         cd DOPEMULTI
