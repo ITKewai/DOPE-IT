@@ -5,7 +5,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "DOPE00")
-			screen -ls  | egrep "^\s*[0-9]+.DOPE0" | awk -F "." '{print $1}' | xargs kill
+			screen -ls  | egrep "^\s*[0-9]+.DOPE00" | awk -F "." '{print $1}' | xargs kill
 			clear
 			cd
 			cd DOPE
