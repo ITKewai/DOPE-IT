@@ -798,6 +798,7 @@ else
                                                     clear
                                                     cd
                                                     cd DOPE
+                                                    echo "Processing...."
                                                     if [ -f "$file" ]
                                                         then
                                                             KEY[1]="\e[92m\e[1mDOPE00: STARTED"
@@ -806,6 +807,7 @@ else
                                                             KEY[1]="\e[91m\e[1mDOPE00: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/1
                                                     if [ -f "$file" ]
                                                         then
@@ -815,6 +817,7 @@ else
                                                             KEY[1]="\e[91m\e[1mDOPE01: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/2
                                                     if [ -f "$file" ]
                                                         then
@@ -824,6 +827,7 @@ else
                                                             KEY[2]="\e[91m\e[1mDOPE02: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/3
                                                     if [ -f "$file" ]
                                                         then
@@ -833,6 +837,7 @@ else
                                                             KEY[3]="\e[91m\e[1mDOPE03: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/4
                                                     if [ -f "$file" ]
                                                         then
@@ -842,6 +847,7 @@ else
                                                             KEY[4]="\e[91m\e[1mDOPE04: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/5
                                                     if [ -f "$file" ]
                                                         then
@@ -851,6 +857,7 @@ else
                                                             KEY[5]="\e[91m\e[1mDOPE05: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/6
                                                     if [ -f "$file" ]
                                                         then
@@ -860,6 +867,7 @@ else
                                                             KEY[6]="\e[91m\e[1mDOPE06: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/7
                                                     if [ -f "$file" ]
                                                         then
@@ -869,6 +877,7 @@ else
                                                             KEY[7]="\e[91m\e[1mDOPE07: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/8
                                                     if [ -f "$file" ]
                                                         then
@@ -878,6 +887,7 @@ else
                                                             KEY[8]="\e[91m\e[1mDOPE08: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/9
                                                     if [ -f "$file" ]
                                                         then
@@ -887,6 +897,7 @@ else
                                                             KEY[9]="\e[91m\e[1mDOPE09: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/10
                                                     if [ -f "$file" ]
                                                         then
@@ -896,6 +907,7 @@ else
                                                             KEY[10]="\e[91m\e[1mDOPE10: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/11
                                                     if [ -f "$file" ]
                                                         then
@@ -905,6 +917,7 @@ else
                                                             KEY[11]="\e[91m\e[1mDOPE11: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/12
                                                     if [ -f "$file" ]
                                                         then
@@ -924,6 +937,7 @@ else
                                                     screen -ls  | egrep "^\s*[0-9]+.DOPE" | awk -F "." '{print $1}' | xargs kill
                                                     clear
                                                     cd
+                                                    echo "Processing...."
                                                     cd DOPEMULTI/1
                                                     if [ -f "$file" ]
                                                         then
@@ -933,6 +947,7 @@ else
                                                             KEY[1]="\e[91m\e[1mDOPE01: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/2
                                                     if [ -f "$file" ]
                                                         then
@@ -942,6 +957,7 @@ else
                                                             KEY[2]="\e[91m\e[1mDOPE02: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/3
                                                     if [ -f "$file" ]
                                                         then
@@ -951,6 +967,7 @@ else
                                                             KEY[3]="\e[91m\e[1mDOPE03: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/4
                                                     if [ -f "$file" ]
                                                         then
@@ -960,6 +977,7 @@ else
                                                             KEY[4]="\e[91m\e[1mDOPE04: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/5
                                                     if [ -f "$file" ]
                                                         then
@@ -969,6 +987,7 @@ else
                                                             KEY[5]="\e[91m\e[1mDOPE05: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/6
                                                     if [ -f "$file" ]
                                                         then
@@ -978,6 +997,7 @@ else
                                                             KEY[6]="\e[91m\e[1mDOPE06: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/7
                                                     if [ -f "$file" ]
                                                         then
@@ -987,6 +1007,7 @@ else
                                                             KEY[7]="\e[91m\e[1mDOPE07: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/8
                                                     if [ -f "$file" ]
                                                         then
@@ -996,6 +1017,7 @@ else
                                                             KEY[8]="\e[91m\e[1mDOPE08: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/9
                                                     if [ -f "$file" ]
                                                         then
@@ -1005,6 +1027,7 @@ else
                                                             KEY[9]="\e[91m\e[1mDOPE09: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/10
                                                     if [ -f "$file" ]
                                                         then
@@ -1014,6 +1037,7 @@ else
                                                             KEY[10]="\e[91m\e[1mDOPE10: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/11
                                                     if [ -f "$file" ]
                                                         then
@@ -1023,6 +1047,7 @@ else
                                                             KEY[11]="\e[91m\e[1mDOPE11: KEY NOT FOUND"
                                                     fi
                                                     cd
+                                                    sleep 3
                                                     cd DOPEMULTI/12
                                                     if [ -f "$file" ]
                                                         then
