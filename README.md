@@ -1,5 +1,5 @@
-@everyone 
-Linux **Ubuntu** & **CentOS** installer & updater by @IT | Kewai#9029 ( @Gagong#3333  made a small contribution to this :kappa:)
+Hi evryone
+Linux **Ubuntu** & **CentOS** installer & updater by @IT | Kewai#9029 ( @Gagong#3333  made a small contribution to this)
 
 **Ubuntu [x64/armhf]:**
 ```
